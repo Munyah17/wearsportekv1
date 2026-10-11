@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="%LANG_ISO_CODE%">
+  <head>
+    <meta charset="utf-8" />
+    <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>WearSportek — Sportswear Shop</title>
+    <meta name="description" content="Zimbabwe's sportswear shop — football jerseys, soccer boots, kits, custom name & number printing." />
+    <meta name="theme-color" content="#0A0A0B" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/icons/icon-192.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <style>
+      /* flash-proof dark background + real height for the RN-web flex tree */
+      html, body, #root { height: 100%; margin: 0; background: #0A0A0B; }
+      #root { display: flex; flex-direction: column; }
+    </style>
+  </head>
+  <body>
+    <!-- Use static rendering with Expo Router to support running JavaScript. -->
+    <div id="root">
+      <div style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; color: #C8F16A; font-family: system-ui, sans-serif; font-weight: 800; letter-spacing: 2px;">
+        WEARSPOR<span style="color:#fff">TEK</span>
+      </div>
+    </div>
+    <script>
+      if ('serviceWorker' in navigator && location.hostname !== 'localhost') {
+        window.addEventListener('load', function () {
+          navigator.serviceWorker.register('/sw.js').catch(function () {});
+        });
+      }
+    </script>
+  </body>
+</html>

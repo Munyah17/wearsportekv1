@@ -1,0 +1,45 @@
+{
+  "expo": {
+    "name": "WearSportek",
+    "slug": "wearsportek",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "scheme": "wearsportek",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "splash": {
+      "backgroundColor": "#0A0A0B"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.wearsportek.app"
+    },
+    "android": {
+      "package": "com.wearsportek.app",
+      "adaptiveIcon": {
+        "backgroundColor": "#0A0A0B"
+      }
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "single",
+      "favicon": "./assets/favicon.png",
+      "name": "WearSportek — Football Jerseys & Sports Gear",
+      "shortName": "WearSportek",
+      "description": "Zimbabwe's home of authentic football jerseys, boots, kits & customisation.",
+      "themeColor": "#0A0A0B",
+      "backgroundColor": "#0A0A0B",
+      "display": "standalone",
+      "orientation": "portrait"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-secure-store",
+      "expo-status-bar"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
