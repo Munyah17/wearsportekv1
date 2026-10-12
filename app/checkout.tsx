@@ -11,7 +11,13 @@ import {
   useWindowDimensions,
 } from 'react-native';
 import { useRouter } from 'expo-router';
-import { Banknote, CreditCard, Lock, MapPin, Smartphone, Truck, Wallet } from 'lucide-react-native';
+import Banknote from 'lucide-react-native/dist/esm/icons/banknote.mjs';
+import CreditCard from 'lucide-react-native/dist/esm/icons/credit-card.mjs';
+import Lock from 'lucide-react-native/dist/esm/icons/lock.mjs';
+import MapPin from 'lucide-react-native/dist/esm/icons/map-pin.mjs';
+import Smartphone from 'lucide-react-native/dist/esm/icons/smartphone.mjs';
+import Truck from 'lucide-react-native/dist/esm/icons/truck.mjs';
+import Wallet from 'lucide-react-native/dist/esm/icons/wallet.mjs';
 import { NavBar } from '@/components/NavBar';
 import { Footer } from '@/components/Footer';
 import { Button, Field } from '@/components/ui';

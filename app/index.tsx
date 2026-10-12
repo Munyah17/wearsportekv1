@@ -1,7 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { ScrollView, Text, View, useWindowDimensions, Pressable, Image } from 'react-native';
 import { useRouter } from 'expo-router';
-import { BadgeCheck, Paintbrush, Shirt, Truck } from 'lucide-react-native';
+import BadgeCheck from 'lucide-react-native/dist/esm/icons/badge-check.mjs';
+import Paintbrush from 'lucide-react-native/dist/esm/icons/paintbrush.mjs';
+import Shirt from 'lucide-react-native/dist/esm/icons/shirt.mjs';
+import Truck from 'lucide-react-native/dist/esm/icons/truck.mjs';
 import { NavBar } from '@/components/NavBar';
 import { Footer } from '@/components/Footer';
 import { HeroCarousel } from '@/components/HeroCarousel';

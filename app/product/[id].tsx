@@ -9,7 +9,12 @@ import {
   useWindowDimensions,
 } from 'react-native';
 import { useLocalSearchParams, useRouter } from 'expo-router';
-import { Check, Minus, Paintbrush, Plus, ShoppingBag, Truck } from 'lucide-react-native';
+import Check from 'lucide-react-native/dist/esm/icons/check.mjs';
+import Minus from 'lucide-react-native/dist/esm/icons/minus.mjs';
+import Paintbrush from 'lucide-react-native/dist/esm/icons/paintbrush.mjs';
+import Plus from 'lucide-react-native/dist/esm/icons/plus.mjs';
+import ShoppingBag from 'lucide-react-native/dist/esm/icons/shopping-bag.mjs';
+import Truck from 'lucide-react-native/dist/esm/icons/truck.mjs';
 import { NavBar } from '@/components/NavBar';
 import { Footer } from '@/components/Footer';
 import { Badge, Button } from '@/components/ui';

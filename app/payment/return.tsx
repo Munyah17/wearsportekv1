@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { ActivityIndicator, Text, View } from 'react-native';
 import { useLocalSearchParams, useRouter } from 'expo-router';
-import { CheckCircle2, XCircle } from 'lucide-react-native';
+import CheckCircle2 from 'lucide-react-native/dist/esm/icons/circle-check-big.mjs';
+import XCircle from 'lucide-react-native/dist/esm/icons/circle-x.mjs';
 import { NavBar } from '@/components/NavBar';
 import { Button } from '@/components/ui';
 import { colors } from '@/lib/theme';

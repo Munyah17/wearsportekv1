@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 import { Linking, Pressable, ScrollView, Text, View, useWindowDimensions } from 'react-native';
-import { Mail, MapPin, MessageCircle, Phone, Send } from 'lucide-react-native';
+import Mail from 'lucide-react-native/dist/esm/icons/mail.mjs';
+import MapPin from 'lucide-react-native/dist/esm/icons/map-pin.mjs';
+import MessageCircle from 'lucide-react-native/dist/esm/icons/message-circle.mjs';
+import Phone from 'lucide-react-native/dist/esm/icons/phone.mjs';
+import Send from 'lucide-react-native/dist/esm/icons/send.mjs';
 import { NavBar } from '@/components/NavBar';
 import { Footer } from '@/components/Footer';
 import { Button, Field } from '@/components/ui';

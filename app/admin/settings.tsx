@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Platform, Pressable, Text, View } from 'react-native';
-import { Plus, X } from 'lucide-react-native';
+import Plus from 'lucide-react-native/dist/esm/icons/plus.mjs';
+import X from 'lucide-react-native/dist/esm/icons/x.mjs';
 import { AdminPage, Card, Input, SaveBar } from '@/components/admin';
 import { colors } from '@/lib/theme';
 import { adminApi } from '@/lib/admin';

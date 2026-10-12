@@ -1,6 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { Modal, Platform, Pressable, ScrollView, Text, View } from 'react-native';
-import { Banknote, CreditCard, Smartphone, Wallet, X } from 'lucide-react-native';
+import Banknote from 'lucide-react-native/dist/esm/icons/banknote.mjs';
+import CreditCard from 'lucide-react-native/dist/esm/icons/credit-card.mjs';
+import Smartphone from 'lucide-react-native/dist/esm/icons/smartphone.mjs';
+import Wallet from 'lucide-react-native/dist/esm/icons/wallet.mjs';
+import X from 'lucide-react-native/dist/esm/icons/x.mjs';
 import { AddButton, AdminPage, Card, Empty, Input, Row, SaveBar, Toggle } from '@/components/admin';
 import { colors, radii } from '@/lib/theme';
 import { adminApi } from '@/lib/admin';

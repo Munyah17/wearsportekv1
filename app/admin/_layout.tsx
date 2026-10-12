@@ -1,10 +1,15 @@
 import React, { useEffect } from 'react';
 import { Pressable, ScrollView, Text, View, useWindowDimensions } from 'react-native';
 import { Stack, usePathname, useRouter } from 'expo-router';
-import {
-  Image as ImageIcon, LayoutDashboard, LogOut, Package, Settings2,
-  ShoppingCart, Tags, Truck, Wallet,
-} from 'lucide-react-native';
+import ImageIcon from 'lucide-react-native/dist/esm/icons/image.mjs';
+import LayoutDashboard from 'lucide-react-native/dist/esm/icons/layout-dashboard.mjs';
+import LogOut from 'lucide-react-native/dist/esm/icons/log-out.mjs';
+import Package from 'lucide-react-native/dist/esm/icons/package.mjs';
+import Settings2 from 'lucide-react-native/dist/esm/icons/settings-2.mjs';
+import ShoppingCart from 'lucide-react-native/dist/esm/icons/shopping-cart.mjs';
+import Tags from 'lucide-react-native/dist/esm/icons/tags.mjs';
+import Truck from 'lucide-react-native/dist/esm/icons/truck.mjs';
+import Wallet from 'lucide-react-native/dist/esm/icons/wallet.mjs';
 import { colors } from '@/lib/theme';
 import { useAuth } from '@/lib/hooks';
 import { isSupabaseConfigured } from '@/lib/supabase';

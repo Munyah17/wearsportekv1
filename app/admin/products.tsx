@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Image, Modal, Pressable, ScrollView, Text, View, useWindowDimensions, Platform } from 'react-native';
-import { Pencil, X } from 'lucide-react-native';
+import Pencil from 'lucide-react-native/dist/esm/icons/pencil.mjs';
+import X from 'lucide-react-native/dist/esm/icons/x.mjs';
 import { AddButton, AdminPage, Card, Empty, Input, Row, SaveBar, Toggle } from '@/components/admin';
 import { colors, radii } from '@/lib/theme';
 import { formatUSD } from '@/lib/seed';

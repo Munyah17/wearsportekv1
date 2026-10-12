@@ -1,7 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { ScrollView, Text, View, useWindowDimensions } from 'react-native';
 import { useRouter } from 'expo-router';
-import { LogOut, Package, ShieldCheck, Truck, UserRound } from 'lucide-react-native';
+import LogOut from 'lucide-react-native/dist/esm/icons/log-out.mjs';
+import Package from 'lucide-react-native/dist/esm/icons/package.mjs';
+import ShieldCheck from 'lucide-react-native/dist/esm/icons/shield-check.mjs';
+import Truck from 'lucide-react-native/dist/esm/icons/truck.mjs';
+import UserRound from 'lucide-react-native/dist/esm/icons/user-round.mjs';
 import { NavBar } from '@/components/NavBar';
 import { Footer } from '@/components/Footer';
 import { Button, Field } from '@/components/ui';

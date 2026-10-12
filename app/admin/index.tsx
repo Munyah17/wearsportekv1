@@ -1,6 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { Text, View, useWindowDimensions } from 'react-native';
-import { Image as ImageIcon, Package, ShoppingCart, Truck, Wallet } from 'lucide-react-native';
+import ImageIcon from 'lucide-react-native/dist/esm/icons/image.mjs';
+import Package from 'lucide-react-native/dist/esm/icons/package.mjs';
+import ShoppingCart from 'lucide-react-native/dist/esm/icons/shopping-cart.mjs';
+import Truck from 'lucide-react-native/dist/esm/icons/truck.mjs';
+import Wallet from 'lucide-react-native/dist/esm/icons/wallet.mjs';
 import { AdminPage, Card } from '@/components/admin';
 import { colors } from '@/lib/theme';
 import { adminApi } from '@/lib/admin';

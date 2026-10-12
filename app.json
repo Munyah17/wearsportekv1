@@ -39,7 +39,9 @@
       "expo-status-bar"
     ],
     "experiments": {
-      "typedRoutes": true
+      "typedRoutes": true,
+      "treeShaking": true,
+      "asyncRoutes": true
     }
   }
 }

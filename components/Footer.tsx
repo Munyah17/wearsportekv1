@@ -1,7 +1,13 @@
 import React from 'react';
 import { Linking, Pressable, Text, useWindowDimensions, View } from 'react-native';
 import { useRouter } from 'expo-router';
-import { AtSign, Camera, Mail, MapPin, MessageCircle, Music2, Phone } from 'lucide-react-native';
+import AtSign from 'lucide-react-native/dist/esm/icons/at-sign.mjs';
+import Camera from 'lucide-react-native/dist/esm/icons/camera.mjs';
+import Mail from 'lucide-react-native/dist/esm/icons/mail.mjs';
+import MapPin from 'lucide-react-native/dist/esm/icons/map-pin.mjs';
+import MessageCircle from 'lucide-react-native/dist/esm/icons/message-circle.mjs';
+import Music2 from 'lucide-react-native/dist/esm/icons/music-2.mjs';
+import Phone from 'lucide-react-native/dist/esm/icons/phone.mjs';
 import { colors } from '@/lib/theme';
 import { useSettings } from '@/lib/store';
 import { Logo } from './Logo';

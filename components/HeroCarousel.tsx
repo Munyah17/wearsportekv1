@@ -10,7 +10,8 @@ import {
   View,
 } from 'react-native';
 import { useRouter } from 'expo-router';
-import { ChevronLeft, ChevronRight } from 'lucide-react-native';
+import ChevronLeft from 'lucide-react-native/dist/esm/icons/chevron-left.mjs';
+import ChevronRight from 'lucide-react-native/dist/esm/icons/chevron-right.mjs';
 import { colors, radii } from '@/lib/theme';
 import type { Banner } from '@/lib/types';
 

@@ -1,7 +1,15 @@
 import React, { useState } from 'react';
 import { Pressable, Text, useWindowDimensions, View } from 'react-native';
 import { Link, useRouter } from 'expo-router';
-import { HeartHandshake, Menu, Moon, Search, Shield, ShoppingBag, Sun, User, X } from 'lucide-react-native';
+import HeartHandshake from 'lucide-react-native/dist/esm/icons/heart-handshake.mjs';
+import Menu from 'lucide-react-native/dist/esm/icons/menu.mjs';
+import Moon from 'lucide-react-native/dist/esm/icons/moon.mjs';
+import Search from 'lucide-react-native/dist/esm/icons/search.mjs';
+import Shield from 'lucide-react-native/dist/esm/icons/shield.mjs';
+import ShoppingBag from 'lucide-react-native/dist/esm/icons/shopping-bag.mjs';
+import Sun from 'lucide-react-native/dist/esm/icons/sun.mjs';
+import User from 'lucide-react-native/dist/esm/icons/user.mjs';
+import X from 'lucide-react-native/dist/esm/icons/x.mjs';
 import { colors } from '@/lib/theme';
 import { useCart, useSettings, useTheme } from '@/lib/store';
 import { useAuth } from '@/lib/hooks';

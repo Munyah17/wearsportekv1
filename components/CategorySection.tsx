@@ -8,7 +8,9 @@ import {
   View,
 } from 'react-native';
 import { useRouter } from 'expo-router';
-import { ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react-native';
+import ArrowRight from 'lucide-react-native/dist/esm/icons/arrow-right.mjs';
+import ChevronLeft from 'lucide-react-native/dist/esm/icons/chevron-left.mjs';
+import ChevronRight from 'lucide-react-native/dist/esm/icons/chevron-right.mjs';
 import { ProductCard } from './ProductCard';
 import { SectionHeader } from './ui';
 import { colors } from '@/lib/theme';

@@ -1,6 +1,7 @@
 import React from 'react';
 import { ActivityIndicator, Pressable, ScrollView, Switch, Text, TextInput, View, useWindowDimensions } from 'react-native';
-import { Plus, Trash2 } from 'lucide-react-native';
+import Plus from 'lucide-react-native/dist/esm/icons/plus.mjs';
+import Trash2 from 'lucide-react-native/dist/esm/icons/trash.mjs';
 import { colors, radii } from '@/lib/theme';
 
 export function AdminPage({ title, action, children }: { title: string; action?: React.ReactNode; children: React.ReactNode }) {

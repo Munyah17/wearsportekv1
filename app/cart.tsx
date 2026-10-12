@@ -1,7 +1,10 @@
 import React from 'react';
 import { Image, Pressable, ScrollView, Text, View, useWindowDimensions } from 'react-native';
 import { useRouter } from 'expo-router';
-import { Minus, Plus, ShoppingBag, Trash2 } from 'lucide-react-native';
+import Minus from 'lucide-react-native/dist/esm/icons/minus.mjs';
+import Plus from 'lucide-react-native/dist/esm/icons/plus.mjs';
+import ShoppingBag from 'lucide-react-native/dist/esm/icons/shopping-bag.mjs';
+import Trash2 from 'lucide-react-native/dist/esm/icons/trash.mjs';
 import { NavBar } from '@/components/NavBar';
 import { Footer } from '@/components/Footer';
 import { Button } from '@/components/ui';

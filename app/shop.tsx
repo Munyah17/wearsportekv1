@@ -1,7 +1,8 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { Pressable, ScrollView, Text, TextInput, View, useWindowDimensions } from 'react-native';
 import { useLocalSearchParams } from 'expo-router';
-import { Search, SlidersHorizontal } from 'lucide-react-native';
+import Search from 'lucide-react-native/dist/esm/icons/search.mjs';
+import SlidersHorizontal from 'lucide-react-native/dist/esm/icons/sliders-horizontal.mjs';
 import { NavBar } from '@/components/NavBar';
 import { Footer } from '@/components/Footer';
 import { ProductCard } from '@/components/ProductCard';
