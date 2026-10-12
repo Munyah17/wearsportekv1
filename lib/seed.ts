@@ -5,9 +5,9 @@
 import { Banner, Category, DeliveryZone, PaymentMethod, Product, SiteSettings } from './types';
 
 const u = (id: string, w: number, h: number) =>
-  `https://images.unsplash.com/photo-${id}?auto=format&fit=crop&w=${w}&h=${h}&q=80`;
-const img = (id: string) => u(id, 900, 1100);
-const hero = (id: string) => u(id, 1600, 900);
+  `https://images.unsplash.com/photo-${id}?auto=format&fit=crop&w=${w}&h=${h}&q=62`;
+const img = (id: string) => u(id, 640, 780);
+const hero = (id: string) => u(id, 1440, 810);
 
 export const SEED_CATEGORIES: Category[] = [
   { id: 'c6', slug: 'warriors', name: 'Warriors Fan Jerseys', tagline: 'Zimbabwe national team fan editions — our own designs', image_url: '/products/zw-home.png', sort_order: 0, is_active: true },
