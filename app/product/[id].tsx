@@ -1,6 +1,7 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import {
   Image,
+  Platform,
   Pressable,
   ScrollView,
   Text,
@@ -106,6 +107,29 @@ export default function ProductPage() {
           <View style={{ flex: isDesktop ? 1 : 0 }}>
             <View style={{ borderRadius: radii.xl, overflow: 'hidden', backgroundColor: colors.pitch, aspectRatio: 0.92 }}>
               <Image source={{ uri: product.images[imgIdx] ?? product.images[0] }} style={{ width: '100%', height: '100%' }} resizeMode="cover" />
+              {/* live name+number preview — sits where the back print goes */}
+              {wantCustom && product.is_customizable ? (
+                <View pointerEvents="none" style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, alignItems: 'center' }}>
+                  <Text style={{
+                    marginTop: '19%',
+                    color: '#fff', fontSize: isDesktop ? 24 : 18, fontWeight: '800', letterSpacing: 4,
+                    textShadowColor: 'rgba(0,0,0,0.85)', textShadowOffset: { width: 0, height: 1 }, textShadowRadius: 3,
+                    opacity: customName.trim() ? 1 : 0.4,
+                    ...(Platform.OS === 'web' ? ({ WebkitTextStroke: '1px rgba(0,0,0,0.5)' } as any) : null),
+                  }}>
+                    {(customName.trim() || 'YOUR NAME').toUpperCase()}
+                  </Text>
+                  <Text style={{
+                    marginTop: '3%',
+                    color: '#fff', fontSize: isDesktop ? 130 : Math.min(130, width * 0.3), fontWeight: '900',
+                    textShadowColor: 'rgba(0,0,0,0.85)', textShadowOffset: { width: 0, height: 2 }, textShadowRadius: 4,
+                    opacity: customNumber.trim() ? 1 : 0.4,
+                    ...(Platform.OS === 'web' ? ({ WebkitTextStroke: '2px rgba(0,0,0,0.5)' } as any) : null),
+                  }}>
+                    {customNumber.trim() || '9'}
+                  </Text>
+                </View>
+              ) : null}
               {product.badge ? (
                 <View style={{ position: 'absolute', top: 14, left: 14 }}><Badge label={product.badge} /></View>
               ) : null}
@@ -125,6 +149,11 @@ export default function ProductPage() {
                 ))}
               </ScrollView>
             )}
+            {wantCustom && product.is_customizable ? (
+              <Text style={{ color: colors.mute, fontSize: 11, marginTop: 8 }}>
+                Live preview — name &amp; number printed on the back
+              </Text>
+            ) : null}
           </View>
 
           {/* details */}
@@ -180,7 +209,12 @@ export default function ProductPage() {
                 borderColor: wantCustom ? colors.lime : colors.line,
                 backgroundColor: colors.card, padding: 16, gap: 12,
               }}>
-                <Pressable onPress={() => setWantCustom(!wantCustom)} style={{ flexDirection: 'row', alignItems: 'center', gap: 12 }}>
+                <Pressable onPress={() => {
+                  const next = !wantCustom;
+                  setWantCustom(next);
+                  // jump to the back image so the preview lands where the print goes
+                  if (product.images.length > 1) setImgIdx(next ? product.images.length - 1 : 0);
+                }} style={{ flexDirection: 'row', alignItems: 'center', gap: 12 }}>
                   <View style={{
                     width: 22, height: 22, borderRadius: 6,
                     backgroundColor: wantCustom ? colors.lime : 'transparent',
